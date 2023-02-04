@@ -1,0 +1,27 @@
+.notecard {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  user-select: none;
+  cursor: pointer;
+  transition: box-shadow 0.2 ease, transform 0.2s ease;
+
+  h4 {
+    color: #555;
+  }
+
+  p,  h4 {  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    color: #888;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+  }
+}
